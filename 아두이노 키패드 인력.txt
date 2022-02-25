@@ -1,0 +1,70 @@
+0: 데스크톱 왼쪽, 사이트 전으로, ctrl z
+1: 데스크톱 오른쪽, 사이트 앞으로, ctrl shift z
+2: alt tab, ctrl a, ctrl s
+
+0: 데스크톱 왼쪽, 데스크톱 오른쪽, alt tab
+0 0 0 0
+W< W> AT
+18
+1: ctrl shift tab, ctrl tab, windows t
+1 0 0 0
+ST T WT
+21
+2: 사이트 전으로, 사이트 앞으로, ctrl a
+0 1 0 0
+SB SF A
+21
+3: ctrl z, ctrl shift z, ctrl s
+0 0 1 0
+Z SZ S
+21
+4: ctrl c, ctrl v, ctrl x
+0 0 0 1
+C V X
+21
+5: 마우스 왼쪽 클릭,휠 움직이기 마우스 오른쪽 클릭, (마우스 속도 조절, 버튼 속도 조절)
+1 1 1 1
+ML W MR
+20
+휠
+0 1 1 0
+W.M
+21
+마우스 속도 조절: 속도 내리기, x, 속도 올리기
+1 0 0 1
+M.S 숫자
+21
+버튼 속도 조절: 속도 내리기, x, 속도 올리기
+1 0 1 0
+B.S 숫자
+21
+
+u8g.setFont(u8g_font_courB18);
+u8g.setFont(u8g_font_fub20);
+u8g.setFont(u8g_font_osb21);
+
+==================================================
+
+1 windows ctrl >, windows ctrl <, windows tab
+
+< > WT
+
+2. ctrl shift tab, ctrl tab, (windows >, windows <, windows ^, windows ˅)
+
+ST T WM
+
+3 ctrl a, ctrl s, windows e
+
+A S WE
+
+4 ctrl z (Alt <), ctrl shift z (ctrl y / Alt >), Alt Space
+
+Z SZ AS
+
+5 ctrl c, ctrl v, ctrl x
+
+C V X
+
+6. same
+
+joystick button를 누르면 돌아가는 방향 반대로 oled 단축키 indicater에 점이 생김
